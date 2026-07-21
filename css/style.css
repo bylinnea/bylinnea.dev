@@ -469,6 +469,7 @@ img { display: block; max-width: 100%; }
   height: 100vh;
   padding: var(--nav-h) 3rem 2rem;
   box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .section-inner {
