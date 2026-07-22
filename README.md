@@ -11,7 +11,8 @@ Built from scratch with HTML, CSS and vanilla JavaScript.
 ├── css/
 │   └── style.css       # All styles
 ├── js/
-│   └── script.js       # Hamburger menu + scroll-spy
+│   ├── script.js       # Hamburger menu + scroll-spy
+│   └── writing.js      # Fetches latest Substack posts (via rss2json)
 └── assets/
     ├── images/
     │   └── linnea.jpg  # Profile photo
@@ -20,7 +21,8 @@ Built from scratch with HTML, CSS and vanilla JavaScript.
 
 ## Features
 
-- Scroll-snap single-page layout (About → Projects → Contact)
+- Scroll-snap single-page layout (About → Projects → Writing → Contact)
+- Live "recent posts" list pulled from the Substack RSS feed via [rss2json](https://rss2json.com)
 - Section indicator dots with click navigation
 - Scroll-spy that updates the active nav link as you scroll
 - Responsive — collapses to a hamburger menu on mobile

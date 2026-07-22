@@ -614,6 +614,90 @@ img { display: block; max-width: 100%; }
 .github-cta:hover { color: var(--accent); }
 .github-cta:hover::after { transform: translateX(4px); }
 
+/* WRITING SECTION */
+
+.writing-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: var(--nav-h) 3rem 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.writing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.writing-status {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.writing-status--error {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.writing-post {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+}
+
+.writing-post:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(90, 122, 80, 0.1);
+}
+
+.writing-post-main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.writing-post-title {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  transition: color var(--transition);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.writing-post:hover .writing-post-title { color: var(--accent-dark); }
+
+.writing-post-excerpt {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.writing-post-date {
+  font-family: var(--font-code);
+  font-size: 0.7rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 /* CONTACT SECTION */
 
 .contact-section {
@@ -699,6 +783,18 @@ img { display: block; max-width: 100%; }
   }
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .writing-section {
+    padding: calc(var(--nav-h) + 2rem) 1.5rem 3rem;
+    align-items: flex-start;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .writing-post {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
   }
 
   .contact-section {
