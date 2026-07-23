@@ -25,11 +25,11 @@ Built from scratch with HTML, CSS and vanilla JavaScript.
 - Live "recent posts" list pulled from the Substack RSS feed via [rss2json](https://rss2json.com)
 - Section indicator dots with click navigation
 - Scroll-spy that updates the active nav link as you scroll
-- Responsive — collapses to a hamburger menu on mobile
+- Responsive, collapses to a hamburger menu on mobile
 - CV download
 
 ## Built with
 
-- [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) — code font
-- [Syne](https://fonts.google.com/specimen/Syne) — display headings
-- [DM Sans](https://fonts.google.com/specimen/DM+Sans) — body text
+- [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) - code font
+- [Syne](https://fonts.google.com/specimen/Syne) - display headings
+- [DM Sans](https://fonts.google.com/specimen/DM+Sans) - body text
